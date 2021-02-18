@@ -2,28 +2,28 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.js" />
   </head>
-  <body>
+  <!--NO VOY A TOCAR EL HEAD -->
+
+  <body onload="myFunction()">
+    <script>
+      function myFunction() {
+        alert("Page is loaded"); //estoy poniendo el mens como para que se vea que funciona
+      }
+    </script>
+
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+      <div class="carta">
+        <span class="palo-arriba">&spades;</span>
+        <span class="numero">7</span>
+        <span class="palo-abajo">&spades;</span>
       </div>
+      <!--Este es el div de la carta-->
     </div>
+    <!--Este es el del container-->
+    <script src="../public/main.bundle.js"></script>
   </body>
 </html>
